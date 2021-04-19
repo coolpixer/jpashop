@@ -14,7 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
 class MemberRepositoryTest {
-    Logger log = LoggerFactory.getLogger(getClass());
+    static Logger log = LoggerFactory.getLogger(MemberRepositoryTest.class);
 
     @Autowired
     MemberRepository memberRepository;
@@ -35,6 +35,7 @@ class MemberRepositoryTest {
         //then
         assertThat(memberSaved.getId()).isEqualTo(member.getId());
         assertThat(memberSaved.getUsername()).isEqualTo(member.getUsername());
+
     }
 
     @Test

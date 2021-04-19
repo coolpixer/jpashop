@@ -7,9 +7,10 @@ spring:
   jpa:
     hibernate:
       ddl-auto: create
-    show-sql: true
+#    show-sql: true
 
-logging:
-  level:
-    org.hibernate.SQL: debug
-    org.hibernate.type: trace
+#logging:
+#  level:
+#    org.hibernate.SQL: debug
+#    #org.hibernate.type.descriptor.sql.BasicBinder지만 아래와 같이 축약해도 적용됨
+#    org.hibernate.type: trace
