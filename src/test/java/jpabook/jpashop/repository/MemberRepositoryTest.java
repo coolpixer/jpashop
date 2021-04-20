@@ -30,7 +30,7 @@ class MemberRepositoryTest {
 
         //when
         final Long id = memberRepository.save(member);
-        Member memberSaved = memberRepository.find(id);
+        Member memberSaved = memberRepository.findOne(id);
 
         //then
         assertThat(memberSaved.getId()).isEqualTo(member.getId());
